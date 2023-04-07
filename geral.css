@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 53.5%;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 200;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/******************************/
+/* Genral Reusable Components*/
+/******************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center--v {
+  align-items: center;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #304d33;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5rem;
+
+  line-height: 1.05;
+
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #609966;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.75px;
+  margin-top: 6rem;
+}
+
+.bnt--full {
+  color: #fff;
+}
+.bnt--outline:link,
+.bnt--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.bnt--outline:hover,
+.bnt--outline:active {
+  background-color: #edf1d6;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.bnt--full:hover,
+.bnt--full:active {
+  background-color: #9dc08b;
+}
+.bnt--full:link,
+.bnt--full:active {
+  background-color: #609966;
+  color: #fff;
+  margin-right: 1.6rem;
+}
+
+.bnt,
+.bnt:link,
+.bnt:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+
+  border: none;
+  cursor: pointer;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #609966;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+
+.link:hover,
+.link:active {
+  color: #304d33;
+  border-bottom: 1px solid transparent;
+}
+
+.btn--form {
+  background-color: #436b47;
+  color: #edf1d6;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+/*Helper/Settings classes*/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 500;
+}
